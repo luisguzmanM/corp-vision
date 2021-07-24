@@ -1,7 +1,19 @@
 @use '../utilities/variables' as var
 
-header
-  margin-top: var.$vertical-margin
-  margin-bottom: var.$vertical-margin
-  margin-left: var.$horizontal-margin
-  margin-right: var.$horizontal-margin
+.container-homepage
+  width: 100%
+  height: 100vh
+  overflow: hidden
+  background-image: url('../../img/header-1.jpg')
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  .header
+    width: 100%
+    height: 5rem
+    background-color: rgba(0,0,0,0.4)
+    padding-top: var.$vertical-padding
+    padding-bottom: var.$vertical-padding
+    padding-left: var.$horizontal-padding
+    padding-right: var.$horizontal-padding
+    position: fixed

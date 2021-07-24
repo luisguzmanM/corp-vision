@@ -1,0 +1,39 @@
+@use '../utilities/variables' as var
+
+.menu
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100vh
+  background-color: rgba(0,0,0,0.8)
+  display: none
+  @media screen and (min-width: var.$breakpoint-md)
+    display: block
+    background-color: transparent
+  .menu__list
+    margin-top: 5rem
+    width: 100%
+    height: 50%
+    list-style: none
+    text-align: center
+    display: flex
+    flex-direction: column 
+    justify-content: space-around
+    align-content: center
+    @media screen and (min-width: var.$breakpoint-md)
+      flex-direction: row
+      margin-top: 0
+      justify-content: center
+      height: 5rem
+      align-items: center
+    .menu__item
+      padding: 0.625rem 0
+      @media screen and (min-width: var.$breakpoint-md)
+        margin: 0 8px
+      .menu__link
+        color: var.$banner-slider-text-color
+        text-transform: uppercase
+        &:hover
+          color: grey
+      
