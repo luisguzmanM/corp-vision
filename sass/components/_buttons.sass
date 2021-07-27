@@ -1,6 +1,6 @@
 @use '../utilities/variables' as var
 
-// icon header navigation for mobile devices
+// Button menu
 #btn-menu
   display: none
 #btn-menu:checked ~ .menu
@@ -11,31 +11,42 @@
   background-color: var.$primary-color
   color: var.$banner-slider-text-color
   padding: 0.625rem
-  position: absolute
-  right: 1.25rem
+  float: right
+  position: relative
+  z-index: 10
   @media screen and (min-width: var.$breakpoint-md)
     display: none
 
-// icons header search and moon
+// Button search and moon
 .header-buttons
-  position: absolute
-  top: 1.5625rem
-  right: 3.75rem
+  margin-right: 10px
+  float: right
   width: 4.375rem
   height: 1.875rem
   display: flex
   justify-content: space-between
   align-items: center
+  position: relative
+  z-index: 10
+  @media screen and (min-width: var.$breakpoint-md)
+    position: relative
+    right: 0
+    float: right
+    display: flex
+    align-content: center
+    margin-right: 0px
   .header__button
     border: none
     cursor: pointer
+    background: transparent
     .icon-header
-    color: var.$banner-slider-text-color
-    font-size: 1rem
-    background-color: var.$primary-color
-    padding: 0.5rem
-    border-radius: 50%
+      color: var.$banner-slider-text-color
+      font-size: 1rem
+      background-color: var.$primary-color
+      padding: 0.5rem
+      border-radius: 50%
 
+// Button action
 .button
   background-color: var.$primary-color 
   padding-top: var.$vertical-padding
