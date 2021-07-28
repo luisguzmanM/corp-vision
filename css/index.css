@@ -109,25 +109,25 @@
     margin-right: 0px;
   }
 }
-
-.show {
-  display: block;
-}
-.show .header__button {
+.header-buttons .header__button {
   border: none;
   cursor: pointer;
   background: transparent;
 }
-.show .header__button .icon-header {
+.header-buttons .header__button .icon-header {
   color: #ffffff;
   font-size: 1rem;
   background-color: #009f4d;
   padding: 0.5rem;
   border-radius: 50%;
 }
-.show .header__button .icon-header:hover {
+.header-buttons .header__button .icon-header:hover {
   color: black;
   background-color: rgba(234, 234, 234, 0.8);
+}
+
+.show {
+  display: block;
 }
 
 .button {
