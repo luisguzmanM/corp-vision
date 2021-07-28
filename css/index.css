@@ -208,7 +208,7 @@
 .container-homepage {
   width: 100%;
   height: 100vh;
-  background-image: url("../../img/header-1.jpg");
+  background-image: url("../img/header-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
