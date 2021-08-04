@@ -1,0 +1,20 @@
+@use '../utilities/variables' as var
+
+.title-small
+  font-family: var.$font-family
+  margin-bottom: var.$vertical-margin
+  text-align: start
+  text-transform: capitalize
+  font-size: var.$font-size-h3
+  color: var.$tertiary-color
+  line-height: 1.5
+.title-big
+  @extend .title-small
+  font-size: var.$font-size-h2
+  color: var.$secondary-color
+.simple-text
+  @extend .title-small
+  font-size: var.$font-size-h3
+.about__link
+  @extend .title-small
+  color: var.$secondary-color

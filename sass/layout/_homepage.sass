@@ -4,6 +4,7 @@
   position: absolute
   top: 60%
   transform: translateY(-50%)
+  font-family: var.$font-family
   @media screen and (min-width: var.$breakpoint-md)
     width: 50%
   .homepage__message
@@ -11,10 +12,12 @@
     color: white
     font-size: var.$font-size-h2
     margin-bottom: 1rem
+    font-weight: bold
     @media screen and (min-width: var.$breakpoint-md)
       font-size: var.$font-size-big
   .homepage__text
     @extend .homepage__message
     font-size: var.$font-size-h3
+    font-weight: lighter
     @media screen and (min-width: var.$breakpoint-md)
       font-size: var.$font-size-h2

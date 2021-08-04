@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
 }
 
 .logo__link {
@@ -143,6 +144,7 @@
   min-width: 10.375rem;
   margin: 1rem 0;
   position: relative;
+  font-family: "Poppins", sans-serif;
 }
 .button:hover {
   color: black;
@@ -158,6 +160,7 @@
   background-color: rgba(0, 0, 0, 0.8);
   display: none;
   z-index: 10;
+  font-family: "Poppins", sans-serif;
 }
 @media screen and (min-width: 868px) {
   .menu {
@@ -205,6 +208,29 @@
   color: grey;
 }
 
+.title-small, .about__link, .simple-text, .title-big {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1.25rem;
+  text-align: start;
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: grey;
+  line-height: 1.5;
+}
+
+.title-big {
+  font-size: 1.8rem;
+  color: #213364;
+}
+
+.simple-text {
+  font-size: 1rem;
+}
+
+.about__link {
+  color: #213364;
+}
+
 .container-homepage {
   width: 100%;
   height: 100vh;
@@ -247,6 +273,7 @@
   position: absolute;
   top: 60%;
   transform: translateY(-50%);
+  font-family: "Poppins", sans-serif;
 }
 @media screen and (min-width: 868px) {
   .homepage {
@@ -258,6 +285,7 @@
   color: white;
   font-size: 1.8rem;
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 @media screen and (min-width: 868px) {
   .homepage .homepage__message, .homepage .homepage__text {
@@ -265,12 +293,68 @@
   }
 }
 .homepage .homepage__text {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  font-weight: lighter;
 }
 @media screen and (min-width: 868px) {
   .homepage .homepage__text {
     font-size: 1.8rem;
   }
+}
+
+.about {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+@media screen and (min-width: 868px) {
+  .about {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.about i {
+  color: #009f4d;
+}
+.about .about-wrapper-text {
+  width: 100%;
+}
+@media screen and (min-width: 868px) {
+  .about .about-wrapper-text {
+    width: 50%;
+  }
+}
+.about .about-wrapper-img {
+  width: 100%;
+  display: flex;
+  margin-top: 3.125rem;
+}
+@media screen and (min-width: 868px) {
+  .about .about-wrapper-img {
+    width: 50%;
+    margin-top: none;
+  }
+}
+.about .about-wrapper-img .img-wrapper1 {
+  width: 50%;
+  padding-right: 0.625rem;
+  margin-top: -2.5rem;
+}
+.about .about-wrapper-img .img-wrapper2 {
+  width: 50%;
+}
+.about .about-wrapper-img .img {
+  width: 100%;
+  border-radius: 0.4688rem;
+  margin-bottom: 0.625rem;
 }
 
 /*# sourceMappingURL=index.css.map */

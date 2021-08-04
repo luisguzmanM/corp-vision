@@ -1,0 +1,40 @@
+@use '../utilities/variables' as var
+
+.about
+  padding-left: var.$horizontal-padding-small
+  padding-right: var.$horizontal-padding-small
+  padding-top: var.$vertical-padding-small
+  padding-bottom: var.$vertical-padding-small
+  display: flex
+  flex-direction: column
+  height: 100vh
+  @media screen and (min-width: var.$breakpoint-md)
+    padding-left: var.$horizontal-padding-big
+    padding-right: var.$horizontal-padding-big
+    padding-top: var.$vertical-padding-big
+    padding-bottom: var.$vertical-padding-big
+    flex-direction: row
+    align-items: center
+  i
+    color: var.$primary-color
+  .about-wrapper-text
+    width: 100%
+    @media screen and (min-width: var.$breakpoint-md)
+      width: 50%
+  .about-wrapper-img
+    width: 100%
+    display: flex
+    margin-top: 3.125rem
+    @media screen and (min-width: var.$breakpoint-md)
+      width: 50%
+      margin-top: none
+    .img-wrapper1
+      width: 50%
+      padding-right: 0.625rem
+      margin-top: -2.5rem
+    .img-wrapper2
+      width: 50%
+    .img
+      width: 100%
+      border-radius: 0.4688rem
+      margin-bottom: 0.625rem
