@@ -5,106 +5,60 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/reset.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="./css/index.css">
-  <title>corp vision</title>
+  <title>CORP VISION</title>
 </head>
 
 <body>
 
-  <div class="container-homepage">
+  <div class="container">
+    <section class="grid">
+      <header class="header">
 
-    <header class="header">
-
-      <a href="index.html" class="logo__link">
-        <span class="logo">
+        <div class="logo">
           <div class="logo-wrapper">
-            <div class="logo-wrapper--mod"><i class="fas fa-align-right"></i></div>
+            <div class="logo-icon">
+              <i class="fas fa-align-right"></i>
+            </div>
             <h1 class="logo__title">corp vision</h1>
           </div>
           <div class="logo-wrapper">
-            <div class="logo-wrapper--mod"></div>
-            <p class="logo__subtitle">vision to your future</p>
+            <div class="logo-icon"></div>
+            <p class="logo__text">vision to your future</p>
           </div>
-        </span>
-      </a>
+        </div>
 
-      <input type="checkbox" id="btn-menu">
-
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__item"><a href="index.html" class="menu__link">home</a></li>
-          <li class="menu__item"><a href="about.html" class="menu__link">about</a></li>
-          <li class="menu__item"><a href="services.html" class="menu__link">services</a></li>
-          <li class="menu__item"><a href="project.html" class="menu__link">project</a></li>
-          <li class="menu__item"><a href="contact.html" class="menu__link">contact</a></li>
-        </ul>
-      </nav>
-
-      <div>
-        <label for="btn-menu">
-          <span class="btn-menu">
-            <i class="fas fa-bars" id="iconBurger"></i>
-            <i class="fas fa-times" id="iconX"></i>
-          </span>
-        </label>
-
-        <span class="header-buttons" id="iconsHeader">
-          <button class="header__button">
-            <i class="fas fa-search icon-header"></i>
-          </button>
-          <button class="header__button">
-            <i class="far fa-moon icon-header"></i>
-          </button>
-        </span>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="#" class="menu__link">home</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">about</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">services</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">partners</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-buttons">
+          <i class="fas fa-bars" id="iconBurger"></i>
+          <i class="fas fa-times" id="iconX"></i>
+          <i class="fas fa-search icon-header"></i>
+          <i class="far fa-moon icon-header"></i>
+        </div>
+      </header>
+      <div class="homepage">
+        <p class="big-title">we will solve your issues</p>
+        <p class="big-title">our vision to your future</p>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis hic ut dignissimos minus
+          obcaecati, explicabo iste ad veniam laboriosam nisi nostrum? Consectetur, recusandae cumque!</p>
+        <button class="button">learn more</button>
       </div>
-
-    </header>
-
-    <section class="homepage">
-      <p class="homepage__message">Building a better world with technology</p>
-      <p class="homepage__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut eius exercitationem veniam
-        atque, explicabo voluptatem quibusdam dicta illum tempora fugit.</p>
-      <button class="button">contact</button>
-    </section class="">
-
+    </section>
   </div>
 
-  <main>
-    <section class="about">
-      <div class="about-wrapper-text">
-        <h2 class="title-small">about</h2>
-        <h3 class="title-big">We make the best strategies for you, Enhancing your success</h3>
-        <p class="simple-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut ex ea.</p>
-        <ul class="about__list">
-          <li class="about__item"><a href="#" class="about__link"><i class="fas fa-check-circle"></i>&#32;UI/UX Design
-              and Development</a></li>
-          <li class="about__item"><a href="#" class="about__link"><i class="fas fa-check-circle"></i>&#32;Branding
-              Design and Identity</a></li>
-          <li class="about__item"><a href="#" class="about__link"><i class="fas fa-check-circle"></i>&#32;Mobile App
-              Design and Development</a></li>
-        </ul>
-      </div>
-      
-      <div class="about-wrapper-img">
-        <div class="img-wrapper1">
-          <img src="./img/about-1.jpg" alt="" class="img">
-        </div>
-        <div class="img-wrapper2">
-          <img src="./img/about-2.jpg" alt="" class="img">
-          <img src="./img/about-3.jpg" alt="" class="img">
-        </div>
-      </div>
-
-    </section>
-  </main>
-
-  <script src="./js/buttonNav.js"></script>
 </body>
 
 </html>

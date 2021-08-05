@@ -1,33 +1,5 @@
 @use '../utilities/variables' as var
-
-.container-homepage
-  width: 100%
-  height: 100vh
-  background-image: url('../img/header-1.jpg')
-  background-position: center
-  background-repeat: no-repeat
-  background-size: cover
-  position: relative
-  padding-left: var.$horizontal-padding-small
-  padding-right: var.$horizontal-padding-small
-  padding-top: var.$vertical-padding-small
-  padding-bottom: var.$vertical-padding-small
-  position: relative
-  &::before
-    content: ''
-    display: block
-    background-color: rgba(0,0,0,0.4)
-    width: 100%
-    height: 100%
-    position: absolute
-    top: 0
-    left: 0
-  @media screen and (min-width: var.$breakpoint-md)
-    padding-left: var.$horizontal-padding-big
-    padding-right: var.$horizontal-padding-big
-  .header
-    width: 100%
-    height: 5rem
-    display: flex
-    align-items: center
-    justify-content: space-between    
+.header
+  grid-column: 2/12
+  height: 6.25rem
+  background-color: var.$secondary-color
