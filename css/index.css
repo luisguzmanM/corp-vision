@@ -25,6 +25,8 @@ html {
  * */
 body {
   margin: 0;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 
 /**
@@ -313,35 +315,99 @@ template {
   display: none;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: minmax(100px, auto);
+.container {
+  background-image: url("../../img/header-1.jpg");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.container::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.container .header {
+  width: 100%;
+  max-height: 100px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 20;
 }
 
-.header {
-  grid-column: 2/12;
-  height: 6.25rem;
-  background-color: #213364;
+.menu {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  text-align: center;
+  background: #292922;
+  display: none;
+}
+.menu .menu__list .menu__item {
+  padding: 0.625rem 0;
+}
+.menu .menu__list .menu__item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.menu .menu__list .menu__item .menu__link {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.homepage {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: minmax(100px, auto);
+  padding: 1rem;
+  position: relative;
+  z-index: 10;
+}
+.homepage .homepage__text, .homepage .homepage__text--small, .homepage .homepage__text--big {
+  grid-column: 1/-1;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .homepage .homepage__text, .homepage .homepage__text--small, .homepage .homepage__text--big {
+    grid-column: 1/2;
+  }
+}
+.homepage .homepage__text--big {
+  font-size: 25px;
+  font-weight: bold;
+}
+.homepage .homepage__text--small {
+  font-weight: lighter;
+}
+.homepage .action--button {
+  grid-column: 1/2;
 }
 
 .logo {
-  width: 170px;
-  height: 60px;
+  min-width: 10rem;
+  height: 3.75rem;
   display: inline-block;
 }
 .logo .logo-wrapper {
   width: 100%;
-  height: 30px;
+  height: 1.875rem;
   display: flex;
 }
 .logo .logo-wrapper .logo-icon {
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: #009f4d;
 }
 .logo .logo-wrapper .logo__title, .logo .logo-wrapper .logo__text {
@@ -353,11 +419,54 @@ template {
   align-self: center;
   justify-content: center;
   text-transform: capitalize;
-  font-family: "Poppins", sans-serif;
   color: #fff;
 }
 .logo .logo-wrapper .logo__text {
   font-size: 0.7rem;
+}
+
+.header-buttons {
+  grid-column: 5/-1;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  width: 9.375rem;
+}
+.header-buttons .action--button {
+  background-color: #009f4d;
+  color: #fff;
+  border: transparent;
+  outline: none;
+  text-transform: capitalize;
+  border-radius: 8px;
+  font-weight: bold;
+  width: 12.5rem;
+  height: 3.125rem;
+}
+.header-buttons .search--button, .header-buttons .bg--button {
+  background-color: #009f4d;
+  color: #fff;
+  border: transparent;
+  outline: none;
+  text-transform: capitalize;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 0.6063rem;
+  border-radius: 50%;
+}
+.header-buttons .menu--button, .header-buttons .x--button {
+  background-color: #009f4d;
+  color: #fff;
+  border: transparent;
+  outline: none;
+  text-transform: capitalize;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 0.6063rem;
+  font-size: 1.5rem;
+}
+.header-buttons .x--button {
+  display: none;
 }
 
 /*# sourceMappingURL=index.css.map */

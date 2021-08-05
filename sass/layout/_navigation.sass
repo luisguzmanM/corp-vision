@@ -1,1 +1,15 @@
 @use '../utilities/variables' as var
+.menu
+  grid-column: 1 / -1
+  grid-row: 2 / 3
+  text-align: center
+  background: var.$nav-color
+  display: none
+  .menu__list
+    .menu__item
+      padding: 0.625rem 0
+      &:hover
+        background: rgba(255,255,255,.2)
+      .menu__link
+        color: var.$font-text-color
+        text-transform: uppercase

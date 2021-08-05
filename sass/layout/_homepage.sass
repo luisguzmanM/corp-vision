@@ -1,0 +1,24 @@
+@use '../utilities/variables' as var 
+.homepage
+  display: grid
+  grid-template-columns: 50% 50%
+  grid-template-rows: minmax(100px, auto)
+  padding: 1rem
+  position: relative
+  z-index: 10
+  .homepage__text
+    grid-column: 1 / -1
+    color: var.$font-text-color
+    text-transform: capitalize
+    margin-bottom: 10px
+    @media screen and (min-width: var.$breakpoint-md)
+      grid-column: 1 /2
+  .homepage__text--big
+    @extend .homepage__text
+    font-size: var.$font-size-title-big
+    font-weight: bold
+  .homepage__text--small
+    @extend .homepage__text
+    font-weight: lighter
+  .action--button
+    grid-column: 1 / 2
