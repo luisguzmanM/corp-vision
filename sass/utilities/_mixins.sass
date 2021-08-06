@@ -1,0 +1,21 @@
+@use 'variables' as var
+
+@mixin button
+  background-color: var.$primary-color
+  color: var.$font-text-color
+  border: var.$border-color
+  outline: none
+  text-transform: capitalize
+  border-radius: var.$border-radius
+  font-weight: bold
+  cursor: pointer
+  max-width: 200px
+
+@mixin action-button
+  @include button 
+  padding: 0.825rem 1.25rem
+  grid-column: 1 / 2
+
+@mixin max-width
+  max-width: 1200px
+  margin: 0 auto

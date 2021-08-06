@@ -342,6 +342,12 @@ template {
   position: relative;
   z-index: 20;
 }
+@media screen and (min-width: 1200px) {
+  .container .header {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
 
 .menu {
   grid-column: 1/-1;
@@ -368,12 +374,21 @@ template {
   padding: 1rem;
   position: relative;
   z-index: 10;
+  height: 80%;
+}
+@media screen and (min-width: 1200px) {
+  .homepage {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 .homepage .homepage__text, .homepage .homepage__text--small, .homepage .homepage__text--big {
   grid-column: 1/-1;
   color: #fff;
   text-transform: capitalize;
   margin-bottom: 10px;
+  display: flex;
+  align-self: center;
 }
 @media screen and (min-width: 768px) {
   .homepage .homepage__text, .homepage .homepage__text--small, .homepage .homepage__text--big {
@@ -388,7 +403,19 @@ template {
   font-weight: lighter;
 }
 .homepage .action--button {
+  background-color: #009f4d;
+  color: #fff;
+  border: transparent;
+  outline: none;
+  text-transform: capitalize;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  max-width: 200px;
+  padding: 0.825rem 1.25rem;
   grid-column: 1/2;
+  display: flex;
+  align-self: flex-end;
 }
 
 .logo {
@@ -427,21 +454,9 @@ template {
 
 .header-buttons {
   grid-column: 5/-1;
+  height: 50px;
   display: flex;
-  align-items: start;
-  justify-content: space-around;
-  width: 9.375rem;
-}
-.header-buttons .action--button {
-  background-color: #009f4d;
-  color: #fff;
-  border: transparent;
-  outline: none;
-  text-transform: capitalize;
-  border-radius: 8px;
-  font-weight: bold;
-  width: 12.5rem;
-  height: 3.125rem;
+  align-items: center;
 }
 .header-buttons .search--button, .header-buttons .bg--button {
   background-color: #009f4d;
@@ -451,8 +466,11 @@ template {
   text-transform: capitalize;
   border-radius: 8px;
   font-weight: bold;
+  cursor: pointer;
+  max-width: 200px;
   padding: 0.6063rem;
   border-radius: 50%;
+  margin: 0 5px;
 }
 .header-buttons .menu--button, .header-buttons .x--button {
   background-color: #009f4d;
@@ -462,8 +480,11 @@ template {
   text-transform: capitalize;
   border-radius: 8px;
   font-weight: bold;
+  cursor: pointer;
+  max-width: 200px;
   padding: 0.6063rem;
   font-size: 1.5rem;
+  margin: 0 5px;
 }
 .header-buttons .x--button {
   display: none;

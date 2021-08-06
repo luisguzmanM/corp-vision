@@ -1,4 +1,5 @@
 @use '../utilities/variables' as var
+@use '../utilities/mixins' as mixin
 .container
   background-image: url('../../img/header-1.jpg')
   background-position: center
@@ -23,3 +24,5 @@
     justify-content: space-between
     position: relative
     z-index: 20
+    @media screen and (min-width: var.$breakpoint-xl)
+      @include mixin.max-width

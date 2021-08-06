@@ -1,4 +1,5 @@
 @use '../utilities/variables' as var 
+@use '../utilities/mixins' as mixin
 .homepage
   display: grid
   grid-template-columns: 50% 50%
@@ -6,11 +7,16 @@
   padding: 1rem
   position: relative
   z-index: 10
+  height: 80%
+  @media screen and (min-width: var.$breakpoint-xl)
+    @include mixin.max-width
   .homepage__text
     grid-column: 1 / -1
     color: var.$font-text-color
     text-transform: capitalize
     margin-bottom: 10px
+    display: flex
+    align-self: center
     @media screen and (min-width: var.$breakpoint-md)
       grid-column: 1 /2
   .homepage__text--big
@@ -21,4 +27,6 @@
     @extend .homepage__text
     font-weight: lighter
   .action--button
-    grid-column: 1 / 2
+    @include mixin.action-button
+    display: flex
+    align-self: flex-end

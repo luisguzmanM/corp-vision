@@ -1,30 +1,20 @@
 @use '../utilities/variables' as var
+@use '../utilities/mixins' as mixin
 
-@mixin button
-  background-color: var.$primary-color
-  color: var.$font-text-color
-  border: var.$border-color
-  outline: none
-  text-transform: capitalize
-  border-radius: var.$border-radius
-  font-weight: bold
 .header-buttons
   grid-column: 5 / -1
+  height: 50px
   display: flex
-  align-items: start
-  justify-content: space-around
-  width: 9.375rem
-  .action--button
-    @include button
-    width: 12.5rem
-    height: 3.125rem
+  align-items: center
   .search--button, .bg--button
-    @include button
+    @include mixin.button
     padding: 0.6063rem
     border-radius: 50%
+    margin: 0 5px
   .menu--button, .x--button
-    @include button
+    @include mixin.button
     padding: 0.6063rem
     font-size: 1.5rem
+    margin: 0 5px
   .x--button
     display: none
