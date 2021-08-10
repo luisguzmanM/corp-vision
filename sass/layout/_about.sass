@@ -1,0 +1,55 @@
+@use '../utilities/variables' as var
+@use '../utilities/mixins' as mixin
+.about-us 
+  @include mixin.max-width
+  width: 100%
+  display: flex
+  flex-direction: column
+  padding: 1.25rem
+  @media screen and (min-width: var.$breakpoint-md)
+    flex-direction: row
+    align-items: center
+    height: 100vh
+  .about-us-text
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    @media screen and (min-width: var.$breakpoint-md)
+      margin-right: 1.875rem
+    .title-small
+      @include mixin.small-title
+    .title-big
+      @include mixin.big-title
+    .text-small
+      @include mixin.simple-text
+    .about-us__list
+      width: 100%
+      margin-bottom: 1.5625rem
+      .about-us__item
+        margin-bottom: 1.25rem
+        .about-us-icon-check
+          color: var.$primary-color
+          margin-right: 1.25rem
+        .about-us__link
+          color: var.$secondary-color
+  .about-us-img
+    width: 100%
+    display: grid
+    grid-template-columns: 50% 50%
+    grid-template-rows: repeat(2, 1fr)
+    grid-template-areas: "img--1 img--2" "img--1  img--3"
+    grid-gap: 10px
+    .img
+      width: 100%
+    .img--1
+      grid-area: img--1
+      margin-top: -1.25rem
+      border-radius: 0.625rem
+    .img--2
+      grid-area: img--2
+      border-radius: 0.625rem
+    .img--3 
+      grid-area: img--3
+      border-radius: 0.625rem
+      

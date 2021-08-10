@@ -371,7 +371,6 @@ template {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: minmax(100px, auto);
-  padding: 1rem;
   position: relative;
   z-index: 10;
   height: 80%;
@@ -390,7 +389,7 @@ template {
   display: flex;
   align-self: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .homepage .homepage__text, .homepage .homepage__text--small, .homepage .homepage__text--big {
     grid-column: 1/2;
   }
@@ -399,8 +398,176 @@ template {
   font-size: 25px;
   font-weight: bold;
 }
+@media screen and (min-width: 768px) {
+  .homepage .homepage__text--big {
+    font-size: 2rem;
+  }
+}
 .homepage .homepage__text--small {
   font-weight: lighter;
+}
+@media screen and (min-width: 768px) {
+  .homepage .homepage__text--small {
+    font-size: 1.3rem;
+  }
+}
+
+.about-us {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .about-us {
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+  }
+}
+.about-us .about-us-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media screen and (min-width: 768px) {
+  .about-us .about-us-text {
+    margin-right: 1.875rem;
+  }
+}
+.about-us .about-us-text .title-small {
+  color: #666;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: start;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.about-us .about-us-text .title-big {
+  color: #213364;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: start;
+  margin: 20px 0;
+}
+.about-us .about-us-text .text-small {
+  color: #666;
+  font-weight: lighter;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.5625rem;
+  margin: 20px 0;
+}
+.about-us .about-us-text .about-us__list {
+  width: 100%;
+  margin-bottom: 1.5625rem;
+}
+.about-us .about-us-text .about-us__list .about-us__item {
+  margin-bottom: 1.25rem;
+}
+.about-us .about-us-text .about-us__list .about-us__item .about-us-icon-check {
+  color: #009f4d;
+  margin-right: 1.25rem;
+}
+.about-us .about-us-text .about-us__list .about-us__item .about-us__link {
+  color: #213364;
+}
+.about-us .about-us-img {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "img--1 img--2" "img--1  img--3";
+  grid-gap: 10px;
+}
+.about-us .about-us-img .img {
+  width: 100%;
+}
+.about-us .about-us-img .img--1 {
+  grid-area: img--1;
+  margin-top: -1.25rem;
+  border-radius: 0.625rem;
+}
+.about-us .about-us-img .img--2 {
+  grid-area: img--2;
+  border-radius: 0.625rem;
+}
+.about-us .about-us-img .img--3 {
+  grid-area: img--3;
+  border-radius: 0.625rem;
+}
+
+.features {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 1.3rem;
+}
+@media screen and (min-width: 768px) {
+  .features {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+  }
+}
+.features .features-text {
+  color: #666;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: start;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+@media screen and (min-width: 768px) {
+  .features .features-text {
+    margin: 60px;
+  }
+}
+.features .features-text .title-big {
+  color: #213364;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: start;
+  margin: 20px 0;
+}
+.features .features-text .text-small {
+  color: #666;
+  font-weight: lighter;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.5625rem;
+  margin: 20px 0;
+}
+.features .features-text .button {
+  background-color: #009f4d;
+  color: #fff;
+  border: transparent;
+  outline: none;
+  text-transform: capitalize;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  max-width: 200px;
+  max-height: 60px;
+  padding: 0.9375rem 1.25rem;
+}
+.features .card-features-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px;
+  justify-items: center;
+}
+@media screen and (min-width: 992px) {
+  .features .card-features-grid {
+    padding: 3.75rem;
+  }
 }
 
 .logo {
@@ -422,6 +589,11 @@ template {
   font-size: 1.5rem;
   color: #009f4d;
 }
+@media screen and (min-width: 576px) {
+  .logo .logo-wrapper .logo-icon {
+    font-size: 2rem;
+  }
+}
 .logo .logo-wrapper .logo__title, .logo .logo-wrapper .logo__text {
   width: 100%;
   font-size: 1.4rem;
@@ -433,8 +605,19 @@ template {
   text-transform: capitalize;
   color: #fff;
 }
+@media screen and (min-width: 576px) {
+  .logo .logo-wrapper .logo__title, .logo .logo-wrapper .logo__text {
+    font-size: 2rem;
+    margin-left: 5px;
+  }
+}
 .logo .logo-wrapper .logo__text {
   font-size: 0.7rem;
+}
+@media screen and (min-width: 576px) {
+  .logo .logo-wrapper .logo__text {
+    font-size: 1rem;
+  }
 }
 
 .nav-buttons {
@@ -454,6 +637,7 @@ template {
   cursor: pointer;
   max-width: 200px;
   max-height: 60px;
+  padding: 0.9375rem 1.25rem;
   padding: 0.6063rem;
   border-radius: 50%;
   margin: 0 5px;
@@ -469,6 +653,7 @@ template {
   cursor: pointer;
   max-width: 200px;
   max-height: 60px;
+  padding: 0.9375rem 1.25rem;
   padding: 0.6063rem;
   font-size: 1.5rem;
   margin: 0 5px;
@@ -488,7 +673,37 @@ template {
   cursor: pointer;
   max-width: 200px;
   max-height: 60px;
+  padding: 0.9375rem 1.25rem;
   grid-column: 1/2;
+}
+
+.card-feature-item {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0.625rem;
+  background-color: white;
+}
+.card-feature-item:hover {
+  transition: all 0.5s;
+  transform: translateY(-5px);
+  box-shadow: 0rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.2);
+}
+.card-feature-item .card-features-icon {
+  color: #009f4d;
+  font-size: 1.875rem;
+}
+@media screen and (min-width: 768px) {
+  .card-feature-item .card-features-icon {
+    font-size: 3rem;
+  }
+}
+.card-feature-item .card-features__text {
+  color: #213364;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=index.css.map */

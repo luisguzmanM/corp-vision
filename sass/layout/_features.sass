@@ -1,0 +1,33 @@
+@use '../utilities/variables' as var
+@use '../utilities/mixins' as mixin
+.features
+  width: 100%
+  display: flex
+  flex-direction: column
+  background-color: rgba(0,0,0,0.05 )
+  padding: 1.3rem
+  @media screen and (min-width: var.$breakpoint-md)
+    display: grid
+    grid-template-columns: 50% 50%
+    flex-direction: row
+    align-items: center
+    height: 100vh
+  .features-text
+    @media screen and (min-width: var.$breakpoint-md)
+      margin: 60px 
+    .title-small
+    @include mixin.small-title
+    .title-big
+      @include mixin.big-title
+    .text-small
+      @include mixin.simple-text
+    .button
+      @include mixin.button
+  .card-features-grid
+    width: 100%
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 25px
+    justify-items: center
+    @media screen and (min-width: var.$breakpoint-lg)
+      padding: 3.75rem

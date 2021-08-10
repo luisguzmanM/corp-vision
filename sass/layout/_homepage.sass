@@ -4,7 +4,6 @@
   display: grid
   grid-template-columns: 50% 50%
   grid-template-rows: minmax(100px, auto)
-  padding: 1rem
   position: relative
   z-index: 10
   height: 80%
@@ -17,13 +16,17 @@
     margin-bottom: 10px
     display: flex
     align-self: center
-    @media screen and (min-width: var.$breakpoint-md)
+    @media screen and (min-width: var.$breakpoint-lg)
       grid-column: 1 /2
   .homepage__text--big
     @extend .homepage__text
-    font-size: var.$font-size-title-big
+    font-size: var.$font-size-big-title
     font-weight: bold
+    @media screen and (min-width: var.$breakpoint-md)
+      font-size: 2rem
   .homepage__text--small
     @extend .homepage__text
     font-weight: lighter
+    @media screen and (min-width: var.$breakpoint-md)
+      font-size: 1.3rem
     

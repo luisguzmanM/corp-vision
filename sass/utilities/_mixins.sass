@@ -10,8 +10,32 @@
   font-weight: bold
   cursor: pointer
   max-width: 200px
-  max-height: 60px  
+  max-height: 60px 
+  padding: 0.9375rem 1.25rem
 
 @mixin max-width
   max-width: 1200px
   margin: 0 auto
+
+@mixin small-title
+  color: var.$font-color
+  font-weight: normal
+  font-size: var.$font-size-small-title
+  text-align: start
+  text-transform: uppercase
+  margin: 20px 0
+
+@mixin big-title 
+  color: var.$secondary-color
+  font-weight: bold
+  font-size: var.$font-size-big-title
+  text-align: start
+  margin: 20px 0
+
+@mixin simple-text 
+  color: var.$font-color
+  font-weight: lighter
+  font-size: var.$font-size
+  text-align: justify
+  line-height: 1.5625rem
+  margin: 20px 0

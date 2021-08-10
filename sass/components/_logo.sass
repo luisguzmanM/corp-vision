@@ -9,12 +9,14 @@
     display: flex
     .logo-icon
       width: 1.875rem
-      height: 1.875rem 
+      height: 1.875rem
       display: flex
       justify-content: center
       align-items: center
       font-size: 1.5rem
       color: var.$primary-color
+      @media screen and (min-width: var.$breakpoint-sm)
+        font-size: 2rem
     .logo__title
       width: 100%
       font-size: 1.4rem
@@ -25,6 +27,11 @@
       justify-content: center
       text-transform: capitalize
       color: var.$font-text-color
+      @media screen and (min-width: var.$breakpoint-sm)
+        font-size: 2rem
+        margin-left: 5px
     .logo__text
       @extend .logo__title
       font-size: 0.7rem
+      @media screen and (min-width: var.$breakpoint-sm)
+        font-size: 1rem

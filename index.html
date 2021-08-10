@@ -43,28 +43,78 @@
       </nav>
 
       <div class="nav-buttons">
-        <i class="fas fa-search search--button"></i>
-        <i class="far fa-moon bg--button"></i>
-        <i class="fas fa-bars menu--button" id="iconToOpen"></i>
-        <i class="fas fa-times x--button" id="iconToClose"></i>
+        <i class="fas fa-search search--button js-search-button"></i>
+        <i class="far fa-moon bg--button js-moon-button"></i>
+        <label for="btn-nav">
+          <i class="fas fa-bars menu--button js-menu-button" id="iconToOpen"></i>
+          <i class="fas fa-times x--button js-x-button" id="iconToClose"></i>
+        </label>
+        <input type="checkbox" id="btn-nav">
       </div>
+
 
     </header>
 
-      <section class="homepage">
-        <p class="homepage__text--big">we will solve your issues our vision to your future</p>
-        <p class="homepage__text--small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis hic ut dignissimos minus
-          obcaecati, explicabo iste ad veniam laboriosam nisi nostrum? Consectetur, recusandae cumque!</p>
-        <button class="action-button">learn more</button>
-      </section>
-      
+    <section class="homepage">
+      <p class="homepage__text--big">we will solve your issues our vision to your future</p>
+      <p class="homepage__text--small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis hic ut
+        dignissimos minus
+        obcaecati, explicabo iste ad veniam laboriosam nisi nostrum? Consectetur, recusandae cumque!</p>
+      <button class="action-button">learn more</button>
+    </section>
+
   </div>
 
   <main class="main">
     <section class="about-us">
-      <h2 class="title-small">about</h2>
-      <h3 class="title-big">We make the best strategies for you, Enhancing your success</h3>
-      <p class="text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut ex ea.</p>
+      <div class="about-us-text">
+        <h2 class="title-small">about us</h2>
+        <h3 class="title-big">We make the best strategies for you, Enhancing your success</h3>
+        <p class="text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut ex ea.</p>
+        <ul class="about-us__list">
+          <li class="about-us__item"><i class="fas fa-check-circle about-us-icon-check"></i><a href="#"
+              class="about-us__link">UI/UX Design and Development</a></li>
+          <li class="about-us__item"><i class="fas fa-check-circle about-us-icon-check"></i><a href="#"
+              class="about-us__link">Branding Design and Identity</a></li>
+          <li class="about-us__item"><i class="fas fa-check-circle about-us-icon-check"></i><a href="#"
+              class="about-us__link">Mobile App Design and Development</a></li>
+        </ul>
+      </div>
+      <div class="about-us-img">
+        <img src="./img/about-1.jpg" alt="" class="img img--1">
+        <img src="./img/about-2.jpg" alt="" class="img img--2">
+        <img src="./img/about-3.jpg" alt="" class="img img--3">
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="features-text">
+        <h2 class="title-small">every day brings new challenges</h2>
+        <h3 class="title-big">creative agency focused on vision, product and people</h3>
+        <p class="text-small">Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia est.
+          Quisque ut lectus consequat, venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit. Suspendisse
+          non init magnaa velit efficitur, dolor eget ex fermentum.</p>
+        <button class="button">discover more</button>
+      </div>
+      <div class="card-features-grid">
+        <div class="card-feature-item">
+          <i class="fas fa-cog card-features-icon"></i>
+          <p class="card-features__text">Our Process</p>
+        </div>
+        <div class="card-feature-item">
+          <i class="fas fa-hands-helping card-features-icon"></i>
+          <p class="card-features__text">How We Help</p>
+        </div>
+        <div class="card-feature-item">
+          <i class="far fa-image card-features-icon"></i>
+          <p class="card-features__text">UI/UX Design</p>
+        </div>
+        <div class="card-feature-item">
+          <i class="fas fa-lightbulb card-features-icon"></i>
+          <p class="card-features__text">Creative Ideas</p>
+        </div>
+      </div>
     </section>
   </main>
 
