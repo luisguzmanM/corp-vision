@@ -1,0 +1,52 @@
+@use '../utilities/variables' as var
+.card
+  width: 20rem
+  min-height: 24rem
+  max-height: 24rem
+  display: flex
+  flex-direction: column
+  margin: 0.625rem
+  margin-bottom: 1.25rem
+  border-radius: 0.625rem
+  box-shadow: 0rem 0.3125rem 0.625rem rgba(0,0,0,0.1)
+  transition: all 0.5s
+  &:hover
+    box-shadow: 0rem 0.625rem 0.625rem rgba(0,0,0,0.2)
+    transition: all 0.5s
+    transform: translateY(-0.625rem)
+  .card-wrapper-img
+    .card__img
+      width: 100%
+      border-radius: 0.625rem 0.625rem 0rem 0rem
+  .card-info
+    width: 100%
+    display: flex
+    flex-direction: column
+    text-align: center
+    padding: 10px
+    .card__link
+      background: white
+      padding: 20px 30px
+      border-radius: 0.625rem
+      margin-top: -3rem 
+      margin-left: auto
+      margin-right: auto
+      color: var.$secondary-color
+      font-size: var.$font-size-small-title
+      text-transform: capitalize
+      font-weight: 500
+      transition: all 0.5s
+      &:hover
+        transition: all 0.5s
+        color: var.$primary-color
+    .card__text
+      color: var.$font-color
+      font-size: var.$font-size
+      margin-bottom: 1.25rem
+    .card__link--action
+      @extend .card__link
+      font-size: var.$font-size
+      width: 6.25rem
+      height: auto
+      padding: 0
+      margin: 0 auto

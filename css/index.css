@@ -344,7 +344,7 @@ template {
 }
 @media screen and (min-width: 1200px) {
   .container .header {
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
   }
 }
@@ -377,7 +377,7 @@ template {
 }
 @media screen and (min-width: 1200px) {
   .homepage {
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
   }
 }
@@ -413,7 +413,7 @@ template {
 }
 
 .about-us {
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
   width: 100%;
   display: flex;
@@ -444,14 +444,14 @@ template {
   font-size: 20px;
   text-align: start;
   text-transform: uppercase;
-  margin: 20px 0;
+  margin: 1.25rem 0;
 }
 .about-us .about-us-text .title-big {
   color: #213364;
   font-weight: bold;
   font-size: 25px;
   text-align: start;
-  margin: 20px 0;
+  margin: 1.25rem 0;
 }
 .about-us .about-us-text .text-small {
   color: #666;
@@ -459,7 +459,7 @@ template {
   font-size: 16px;
   text-align: justify;
   line-height: 1.5625rem;
-  margin: 20px 0;
+  margin: 1.25rem 0;
 }
 .about-us .about-us-text .about-us__list {
   width: 100%;
@@ -522,7 +522,7 @@ template {
   font-size: 20px;
   text-align: start;
   text-transform: uppercase;
-  margin: 20px 0;
+  margin: 1.25rem 0;
 }
 @media screen and (min-width: 768px) {
   .features .features-text {
@@ -534,7 +534,7 @@ template {
   font-weight: bold;
   font-size: 25px;
   text-align: start;
-  margin: 20px 0;
+  margin: 1.25rem 0;
 }
 .features .features-text .text-small {
   color: #666;
@@ -542,7 +542,7 @@ template {
   font-size: 16px;
   text-align: justify;
   line-height: 1.5625rem;
-  margin: 20px 0;
+  margin: 1.25rem 0;
 }
 .features .features-text .button {
   background-color: #009f4d;
@@ -553,8 +553,8 @@ template {
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
-  max-width: 200px;
-  max-height: 60px;
+  max-width: 12.5rem;
+  max-height: 3.75rem;
   padding: 0.9375rem 1.25rem;
 }
 .features .card-features-grid {
@@ -568,6 +568,33 @@ template {
   .features .card-features-grid {
     padding: 3.75rem;
   }
+}
+
+.services {
+  width: 100%;
+  padding: 50px 0;
+  padding: 0 1rem;
+}
+@media screen and (min-width: 992px) {
+  .services {
+    max-width: 75rem;
+    margin: 0 auto;
+  }
+}
+.services .title-big {
+  color: #213364;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: start;
+  margin: 1.25rem 0;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.services .wrapper-cards {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .logo {
@@ -635,8 +662,8 @@ template {
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
-  max-width: 200px;
-  max-height: 60px;
+  max-width: 12.5rem;
+  max-height: 3.75rem;
   padding: 0.9375rem 1.25rem;
   padding: 0.6063rem;
   border-radius: 50%;
@@ -651,8 +678,8 @@ template {
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
-  max-width: 200px;
-  max-height: 60px;
+  max-width: 12.5rem;
+  max-height: 3.75rem;
   padding: 0.9375rem 1.25rem;
   padding: 0.6063rem;
   font-size: 1.5rem;
@@ -671,8 +698,8 @@ template {
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
-  max-width: 200px;
-  max-height: 60px;
+  max-width: 12.5rem;
+  max-height: 3.75rem;
   padding: 0.9375rem 1.25rem;
   grid-column: 1/2;
 }
@@ -704,6 +731,64 @@ template {
 .card-feature-item .card-features__text {
   color: #213364;
   font-size: 1rem;
+}
+
+.card {
+  width: 20rem;
+  min-height: 24rem;
+  max-height: 24rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0.625rem;
+  margin-bottom: 1.25rem;
+  border-radius: 0.625rem;
+  box-shadow: 0rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+}
+.card:hover {
+  box-shadow: 0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
+  transform: translateY(-0.625rem);
+}
+.card .card-wrapper-img .card__img {
+  width: 100%;
+  border-radius: 0.625rem 0.625rem 0rem 0rem;
+}
+.card .card-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+.card .card-info .card__link, .card .card-info .card__link--action {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 0.625rem;
+  margin-top: -3rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: #213364;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+.card .card-info .card__link:hover, .card .card-info .card__link--action:hover {
+  transition: all 0.5s;
+  color: #009f4d;
+}
+.card .card-info .card__text {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 1.25rem;
+}
+.card .card-info .card__link--action {
+  font-size: 16px;
+  width: 6.25rem;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=index.css.map */
