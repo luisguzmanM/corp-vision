@@ -32,7 +32,7 @@
         </div>
       </div>
 
-      <nav class="menu">
+      <nav class="menu" id="menu-nav">
         <ul class="menu__list">
           <li class="menu__item"><a href="#" class="menu__link">home</a></li>
           <li class="menu__item"><a href="#" class="menu__link">about</a></li>
@@ -43,10 +43,10 @@
       </nav>
 
       <div class="nav-buttons">
-        <i class="fas fa-search search--button js-search-button"></i>
-        <i class="far fa-moon bg--button js-moon-button"></i>
-        <i class="fas fa-bars menu--button js-menu-button" id="iconToOpen"></i>
-        <i class="fas fa-times x--button js-x-button" id="iconToClose"></i>
+        <i class="fas fa-search search--button" id="search-btn"></i>
+        <i class="far fa-moon bg--button" id="moon-btn"></i>
+        <i class="fas fa-bars menu--button" id="burger-btn"></i>
+        <i class="fas fa-times x--button" id="close-btn"></i>
       </div>
 
 
@@ -85,31 +85,33 @@
       </div>
     </section>
 
-    <section class="features">
-      <div class="features-text">
-        <h2 class="title-small">every day brings new challenges</h2>
-        <h3 class="title-big">creative agency focused on vision, product and people</h3>
-        <p class="text-small">Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia est.
-          Quisque ut lectus consequat, venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit. Suspendisse
-          non init magnaa velit efficitur, dolor eget ex fermentum.</p>
-        <button class="button">discover more</button>
-      </div>
-      <div class="card-features-grid">
-        <div class="card-feature-item">
-          <i class="fas fa-cog card-features-icon"></i>
-          <p class="card-features__text">Our Process</p>
+    <section class="features-wrapper">
+      <div class="features">
+        <div class="features-text">
+          <h2 class="title-small">every day brings new challenges</h2>
+          <h3 class="title-big">creative agency focused on vision, product and people</h3>
+          <p class="text-small">Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia est.
+            Quisque ut lectus consequat, venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit. Suspendisse
+            non init magnaa velit efficitur, dolor eget ex fermentum.</p>
+          <button class="button">discover more</button>
         </div>
-        <div class="card-feature-item">
-          <i class="fas fa-hands-helping card-features-icon"></i>
-          <p class="card-features__text">How We Help</p>
-        </div>
-        <div class="card-feature-item">
-          <i class="far fa-image card-features-icon"></i>
-          <p class="card-features__text">UI/UX Design</p>
-        </div>
-        <div class="card-feature-item">
-          <i class="fas fa-lightbulb card-features-icon"></i>
-          <p class="card-features__text">Creative Ideas</p>
+        <div class="card-features-grid">
+          <div class="card-feature-item">
+            <i class="fas fa-cog card-features-icon"></i>
+            <p class="card-features__text">Our Process</p>
+          </div>
+          <div class="card-feature-item">
+            <i class="fas fa-hands-helping card-features-icon"></i>
+            <p class="card-features__text">How We Help</p>
+          </div>
+          <div class="card-feature-item">
+            <i class="far fa-image card-features-icon"></i>
+            <p class="card-features__text">UI/UX Design</p>
+          </div>
+          <div class="card-feature-item">
+            <i class="fas fa-lightbulb card-features-icon"></i>
+            <p class="card-features__text">Creative Ideas</p>
+          </div>
         </div>
       </div>
     </section>
@@ -207,6 +209,8 @@
 
     </section>
   </main>
+
+  <script src="./js/NavButton.js"></script>
 
 </body>
 
