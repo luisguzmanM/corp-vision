@@ -1,0 +1,19 @@
+@use '../utilities/variables' as var
+@use '../utilities/mixins' as mixin
+.title-small
+  @include mixin.small-title
+  text-align: center
+  @include mixin.max-width
+.title-big
+  @include mixin.big-title
+  text-align: center
+.gallery-container
+  width: 100%
+  .gallery-text
+    width: 100%
+  .gallery-wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    .gallery__img
+      width: 100%

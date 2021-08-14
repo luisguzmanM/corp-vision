@@ -3,13 +3,37 @@
   grid-column: 1 / -1
   grid-row: 2 / 3
   text-align: center
-  background: var.$nav-color
-  display: none
+  display: block
+  @media screen and (min-width: var.$breakpoint-lg)
+    display: block
+    background: none
+    margin: 0 auto
   .menu__list
+    position: absolute
+    background-color: rgba(0,0,0,0.8)
+    width: 100vw
+    height: 100vh
+    margin-top: -20px
+    margin-left: -20px
+    top: 0
+    left: 0
+    @media screen and (min-width: var.$breakpoint-lg)
+      display: flex
+      position: absolute
+      background-color: rgba(0,0,0,0)
+      width: auto
+      height: auto
+      margin-top: 0
+      margin-left: 0
+      position: relative
     .menu__item
+      margin: 0 5px
       padding: 0.625rem 0
       &:hover
         background: rgba(255,255,255,.2)
+      @media screen and (min-width: var.$breakpoint-lg)
+        &:hover
+        background: none
       .menu__link
         color: var.$font-text-color
         text-transform: uppercase

@@ -353,14 +353,48 @@ template {
   grid-column: 1/-1;
   grid-row: 2/3;
   text-align: center;
-  background: #292922;
-  display: none;
+  display: block;
+}
+@media screen and (min-width: 992px) {
+  .menu {
+    display: block;
+    background: none;
+    margin: 0 auto;
+  }
+}
+.menu .menu__list {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+  margin-top: -20px;
+  margin-left: -20px;
+  top: 0;
+  left: 0;
+}
+@media screen and (min-width: 992px) {
+  .menu .menu__list {
+    display: flex;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    width: auto;
+    height: auto;
+    margin-top: 0;
+    margin-left: 0;
+    position: relative;
+  }
 }
 .menu .menu__list .menu__item {
+  margin: 0 5px;
   padding: 0.625rem 0;
 }
 .menu .menu__list .menu__item:hover {
   background: rgba(255, 255, 255, 0.2);
+}
+@media screen and (min-width: 992px) {
+  .menu .menu__list .menu__item {
+    background: none;
+  }
 }
 .menu .menu__list .menu__item .menu__link {
   color: #fff;
@@ -597,6 +631,42 @@ template {
   justify-content: center;
 }
 
+.title-small {
+  color: #666;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: start;
+  text-transform: uppercase;
+  margin: 1.25rem 0;
+  text-align: center;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.title-big {
+  color: #213364;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: start;
+  margin: 1.25rem 0;
+  text-align: center;
+}
+
+.gallery-container {
+  width: 100%;
+}
+.gallery-container .gallery-text {
+  width: 100%;
+}
+.gallery-container .gallery-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery-container .gallery-wrapper .gallery__img {
+  width: 100%;
+}
+
 .logo {
   min-width: 10rem;
   height: 3.75rem;
@@ -684,6 +754,11 @@ template {
   padding: 0.6063rem;
   font-size: 1.5rem;
   margin: 0 5px;
+}
+@media screen and (min-width: 992px) {
+  .nav-buttons .menu--button, .nav-buttons .x--button {
+    display: none;
+  }
 }
 .nav-buttons .x--button {
   display: none;
@@ -789,6 +864,51 @@ template {
   height: auto;
   padding: 0;
   margin: 0 auto;
+}
+
+.gallery {
+  min-width: 18.75rem;
+  width: 25rem;
+  max-width: 31.25rem;
+  margin: 0.9375rem;
+  position: relative;
+  height: 100%;
+}
+.gallery .img__gallery {
+  width: 100%;
+  display: block;
+}
+.gallery .img__gallery:hover {
+  transform: scale(1.2);
+}
+.gallery .gallery__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: flex-end;
+  opacity: 0;
+  transition: all 1;
+  text-align: start;
+  padding: 30px;
+}
+.gallery .gallery__text .gallery__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.gallery .gallery__text .gallery__description {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.gallery .gallery__text:hover {
+  opacity: 1;
+  transition: opacity 0.5s;
 }
 
 /*# sourceMappingURL=index.css.map */
