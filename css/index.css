@@ -913,4 +913,20 @@ template {
   transition: opacity 0.5s;
 }
 
+.brands {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 50px 0;
+}
+.brands .brand {
+  width: 200px;
+  margin: 50px 20px;
+}
+.brands .brand .brand__img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=index.css.map */
