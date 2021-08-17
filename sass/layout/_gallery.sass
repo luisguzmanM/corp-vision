@@ -1,17 +1,21 @@
 @use '../utilities/variables' as var
 @use '../utilities/mixins' as mixin
-.title-small
-  @include mixin.small-title
-  text-align: center
-  @include mixin.max-width
-.title-big
-  @include mixin.big-title
-  text-align: center
-.gallery-container
-  @include mixin.max-width
+.gallery-wrapper-primary
+  background-color: rgba(0,0,0,0.05)
   width: 100%
+  padding: 1.875rem 0
+  .gallery-container
+    @include mixin.max-width
+    width: 100%
+    margin: 0 auto
   .gallery-text
     width: 100%
+    .title-small
+      @include mixin.small-title
+      text-align: center
+    .title-big
+      @include mixin.big-title
+      text-align: center
   .gallery-wrapper
     display: flex
     flex-wrap: wrap
