@@ -1,0 +1,26 @@
+@use '../utilities/variables' as var
+@use '../utilities/mixins' as mixin 
+.progress
+  width: 100%
+  display: flex
+  flex-direction: column
+  padding: 1.25rem
+  align-items: center
+  @media screen and (min-width: var.$breakpoint-lg)
+    flex-direction: row
+    height: 80vh
+  .progress-wrapper
+    width: 100%
+    padding: 1rem
+    @media screen and (min-width: var.$breakpoint-lg)
+      width: 50%
+    .progress__img
+      width: 100%
+      border-radius: 1.25rem
+    .progress-texts
+      width: 100%
+      .progress__title--small
+        @include mixin.small-title
+      .progress__title--big
+        @include mixin.big-title
+        text-transform: capitalize

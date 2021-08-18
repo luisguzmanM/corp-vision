@@ -667,6 +667,52 @@ template {
   width: 100%;
 }
 
+.progress {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  align-items: center;
+}
+@media screen and (min-width: 992px) {
+  .progress {
+    flex-direction: row;
+    height: 80vh;
+  }
+}
+.progress .progress-wrapper {
+  width: 100%;
+  padding: 1rem;
+}
+@media screen and (min-width: 992px) {
+  .progress .progress-wrapper {
+    width: 50%;
+  }
+}
+.progress .progress-wrapper .progress__img {
+  width: 100%;
+  border-radius: 1.25rem;
+}
+.progress .progress-wrapper .progress-texts {
+  width: 100%;
+}
+.progress .progress-wrapper .progress-texts .progress__title--small {
+  color: #666;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: start;
+  text-transform: uppercase;
+  margin: 1.25rem 0;
+}
+.progress .progress-wrapper .progress-texts .progress__title--big {
+  color: #213364;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: start;
+  margin: 1.25rem 0;
+  text-transform: capitalize;
+}
+
 .logo {
   min-width: 10rem;
   height: 3.75rem;
@@ -931,6 +977,70 @@ template {
 }
 .brands .brand .brand__img {
   width: 100%;
+}
+
+.progress-graphic {
+  width: 100%;
+  margin: 2.5rem 0;
+}
+.progress-graphic .progress-graphic-titles--80, .progress-graphic .progress-graphic-titles--90, .progress-graphic .progress-graphic-titles--60, .progress-graphic .progress-graphic-titles--95 {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.progress-graphic .progress-graphic-titles--80 .progress-graphic__title, .progress-graphic .progress-graphic-titles--90 .progress-graphic__title, .progress-graphic .progress-graphic-titles--60 .progress-graphic__title, .progress-graphic .progress-graphic-titles--95 .progress-graphic__title {
+  color: black;
+  font-weight: 300;
+  text-transform: capitalize;
+  display: inline-block;
+}
+.progress-graphic .progress-graphic-titles--95 {
+  width: 95%;
+}
+.progress-graphic .progress-graphic-titles--60 {
+  width: 85%;
+}
+.progress-graphic .progress-graphic-titles--90 {
+  width: 90%;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 0.3125rem;
+  border-radius: 1.25rem;
+  background: rgba(0, 0, 0, 0.2);
+  margin: 0.625rem 0;
+}
+.progress-bar .progress-reached--80, .progress-bar .progress-reached--90, .progress-bar .progress-reached--60, .progress-bar .progress-reached--95 {
+  width: 80%;
+  position: relative;
+  height: 100%;
+  background: linear-gradient(90deg, #2657eb, #de6161);
+}
+.progress-bar .progress-reached--80::before, .progress-bar .progress-reached--90::before, .progress-bar .progress-reached--60::before, .progress-bar .progress-reached--95::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  background: white;
+  border: 0.0625rem solid #2657eb;
+}
+.progress-bar .progress-reached--95 {
+  width: 95%;
+  background: linear-gradient(90deg, #556270, #4ECDC4);
+}
+.progress-bar .progress-reached--60 {
+  width: 85%;
+  background: linear-gradient(90deg, #ef32d9, #89fffd);
+}
+.progress-bar .progress-reached--90 {
+  width: 90%;
+  background: linear-gradient(90deg, #19547b, #ffd89b);
 }
 
 /*# sourceMappingURL=index.css.map */
