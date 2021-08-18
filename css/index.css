@@ -758,9 +758,7 @@ template {
 }
 .reviews-container .reviews .review-text {
   width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  margin: 2.5rem 0;
+  margin: 2.5rem auto;
 }
 @media screen and (min-width: 992px) {
   .reviews-container .reviews .review-text {
@@ -831,30 +829,46 @@ template {
   margin: 1.25rem 0;
   text-align: center;
 }
-.news .container-cards {
+.news .cards {
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 992px) {
-  .news .container-cards {
+  .news .cards {
     flex-direction: row;
   }
 }
-.news .container-cards .card__text {
-  text-align: start;
+.news .cards .card-information {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
-.news .container-cards .card__link--action {
+.news .cards .card-information .card__text {
+  text-align: start;
+  color: #666;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+.news .cards .card-information .card__link--action {
   text-align: start;
   margin: 0 0;
+  color: #213364;
+  text-transform: capitalize;
+  transition: color 0.5s;
 }
-.news .container-cards .card-line {
+.news .cards .card-information .card__link--action:hover {
+  color: #009f4d;
+  transition: color 0.5s;
+}
+.news .cards .card-information .card-line {
   margin: 10px 0;
 }
-.news .container-cards .card-author {
+.news .cards .card-information .card-author {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.news .container-cards .card-author .card__link--action {
+.news .cards .card-information .card-author .card__link--action {
   margin: 0;
 }
 

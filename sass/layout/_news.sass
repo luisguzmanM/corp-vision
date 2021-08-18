@@ -13,22 +13,34 @@
     .big-title
       @include mixin.big-title
       text-align: center
-  .container-cards
+  .cards
     display: flex
     flex-direction: column
     @media screen and (min-width: var.$breakpoint-lg)
       flex-direction: row
-    .card__text
-      text-align: start
-    .card__link--action
-      text-align: start
-      margin: 0 0
-    .card-line
-      margin: 10px 0
-    .card-author
+    .card-information
       display: flex
-      justify-content: space-between
+      flex-direction: column
+      padding: 10px
+      .card__text
+        text-align: start
+        color: var.$font-color
+        text-transform: capitalize
+        margin: 20px 0
       .card__link--action
-        margin: 0
-    
-  
+        text-align: start
+        margin: 0 0
+        color: var.$secondary-color
+        text-transform: capitalize
+        transition: color 0.5s
+        &:hover
+          color: var.$primary-color
+          transition: color 0.5s
+      .card-line
+        margin: 10px 0
+      .card-author
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .card__link--action
+          margin: 0
