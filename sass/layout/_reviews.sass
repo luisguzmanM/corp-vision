@@ -1,0 +1,56 @@
+@use '../utilities/mixins' as mixin
+@use '../utilities/variables' as var
+.reviews-container 
+  background-color: rgba(0,0,0,0.05)
+  padding: 1.875rem 0
+  .reviews
+    width: 100%
+    padding: 1rem
+    @media screen and (min-width: var.$breakpoint-lg)
+      @include mixin.max-width
+    .review-titles
+      width: 100%
+      .small-title
+        @include mixin.small-title
+        text-align: center
+      .big-title
+        @include mixin.big-title
+        text-align: center
+        text-transform: capitalize
+    .review-text
+      width: 100%
+      margin: 0 auto
+      text-align: center
+      margin: 2.5rem 0
+      @media screen and (min-width: var.$breakpoint-lg)
+        width: 60%
+      .review__text
+        width: 100%
+        color: grey
+        font-weight: 300
+        line-height: 1.875rem
+    .review-user
+      width: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      .review-wrapper
+        width: 6.25rem
+        height: 6.25rem
+        overflow: hidden
+        border-radius: 50%
+        margin: 0 0.625rem 
+        .review__img
+          width: 100%
+          object-position: center
+      .review-data
+        display: flex
+        flex-direction: column
+        margin: 0 0.625rem 
+        .review__name
+          color: var.$secondary-color
+          text-transform: capitalize
+          font-weight: 700
+        .review__profession
+          color: var.$font-color
+          text-transform: capitalize

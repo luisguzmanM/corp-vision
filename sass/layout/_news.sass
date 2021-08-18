@@ -1,0 +1,34 @@
+@use '../utilities/mixins' as mixin
+@use '../utilities/variables' as var
+.news
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  .news-titles
+    width: 100%
+    .small-title
+      @include mixin.small-title
+      text-align: center
+    .big-title
+      @include mixin.big-title
+      text-align: center
+  .container-cards
+    display: flex
+    flex-direction: column
+    @media screen and (min-width: var.$breakpoint-lg)
+      flex-direction: row
+    .card__text
+      text-align: start
+    .card__link--action
+      text-align: start
+      margin: 0 0
+    .card-line
+      margin: 10px 0
+    .card-author
+      display: flex
+      justify-content: space-between
+      .card__link--action
+        margin: 0
+    
+  

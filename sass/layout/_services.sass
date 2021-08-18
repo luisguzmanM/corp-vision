@@ -2,14 +2,15 @@
 @use '../utilities/mixins' as mixin
 .services
   width: 100%
-  padding: 50px 0
+  padding: 3.125rem 0
   padding: 0 1rem
   @media screen and (min-width: var.$breakpoint-lg) 
     @include mixin.max-width
+    min-height: 37.5rem
   .title-big
     @include mixin.big-title
     text-align: center
-    margin-bottom: 50px
+    margin:3.125rem 0
   .wrapper-cards
     max-width: 100%
     display: flex
