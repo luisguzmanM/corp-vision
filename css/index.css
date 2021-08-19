@@ -808,6 +808,7 @@ template {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 40px 0;
 }
 .news .news-titles {
   width: 100%;
@@ -870,6 +871,85 @@ template {
 }
 .news .cards .card-information .card-author .card__link--action {
   margin: 0;
+}
+
+.newsletter {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background: #151421;
+  height: 80%;
+  min-height: 400px;
+  align-items: center;
+  justify-content: space-around;
+}
+.newsletter .newsletter-wrapper {
+  width: 90%;
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .newsletter .newsletter-wrapper {
+    width: 70%;
+  }
+}
+.newsletter .newsletter-wrapper .newsletter-big-text {
+  color: white;
+  font-size: 2rem;
+  margin: 20px 0;
+  font-weight: 700;
+}
+.newsletter .newsletter-wrapper .newsletter-small-text {
+  font-size: 1rem;
+  color: white;
+  font-weight: 300;
+}
+.newsletter .newsletter-wrapper-form {
+  width: 90%;
+  height: 50px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px 10px 10px 10px;
+}
+@media screen and (min-width: 992px) {
+  .newsletter .newsletter-wrapper-form {
+    width: 50%;
+  }
+}
+.newsletter .newsletter-wrapper-form .newsletter-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter .newsletter-wrapper-form .newsletter-icon .fa-telegram-plane {
+  color: white;
+}
+.newsletter .newsletter-wrapper-form .newsletter__email {
+  height: 100%;
+  width: 100%;
+  background: none;
+  border: none;
+  border-left: 1px solid white;
+  outline: none;
+  color: white;
+  padding: 10px;
+}
+.newsletter .newsletter-wrapper-form .newsletter__button {
+  background-color: #009f4d;
+  color: #fff;
+  border: transparent;
+  outline: none;
+  text-transform: capitalize;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  max-width: 12.5rem;
+  max-height: 3.75rem;
+  padding: 0.9375rem 1.25rem;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .logo {

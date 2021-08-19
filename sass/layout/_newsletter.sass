@@ -1,0 +1,56 @@
+@use '../utilities/mixins' as mixin
+@use '../utilities/variables' as var
+.newsletter
+  width: 100%   
+  padding: 1rem
+  display: flex
+  flex-direction: column
+  background: #151421
+  height: 80%
+  min-height: 400px
+  align-items: center
+  justify-content: space-around
+  .newsletter-wrapper
+    width: 90%
+    text-align: center
+    @media screen and (min-width: var.$breakpoint-lg)
+      width: 70%
+    .newsletter-big-text 
+      color: white
+      font-size:2rem
+      margin: 20px 0
+      font-weight: 700
+    .newsletter-small-text
+      font-size: 1rem
+      color: white
+      font-weight: 300
+  .newsletter-wrapper-form
+    width: 90%
+    height: 50px
+    border: 1px solid white
+    display: flex
+    justify-content: space-between
+    border-radius: 10px 10px 10px 10px
+    @media screen and (min-width: var.$breakpoint-lg)
+      width: 50%
+    .newsletter-icon
+      width: 50px
+      height: 50px
+      display: flex
+      justify-content: center
+      align-items: center
+      .fa-telegram-plane
+        color: white
+    .newsletter__email
+      height: 100%
+      width: 100%
+      background: none
+      border: none
+      border-left: 1px solid white
+      outline: none 
+      color: white
+      padding: 10px
+    .newsletter__button
+      @include mixin.button
+      border-radius: 0px 10px 10px 0px
+
