@@ -883,6 +883,7 @@ template {
   min-height: 400px;
   align-items: center;
   justify-content: space-around;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
 }
 .newsletter .newsletter-wrapper {
   width: 90%;
@@ -1000,6 +1001,7 @@ template {
 .footer .copyright .copyright__text {
   color: grey;
   font-weight: 300;
+  text-align: center;
 }
 .footer .copyright .copyright__text .copyright__link {
   color: white;
