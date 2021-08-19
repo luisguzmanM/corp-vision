@@ -1,0 +1,30 @@
+@use '../utilities/mixins' as mixin
+@use '../utilities/variables' as var
+.footer-container
+  background-color: #151421
+  .footer
+    @include mixin.max-width
+    width: 100%
+    padding: 1rem
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    .footer-wrapper
+      width: 90%
+      margin: 1.25rem auto
+      @media screen and (min-width: var.$breakpoint-sm)
+        width: 40%
+      .footer__title
+        color: white
+        text-transform: uppercase
+        font-size: 1rem
+        margin: 0.625rem 0
+      .footer__text
+        color: grey
+        text-align: start
+        display: block
+        margin: 10px 0
+      .footer__text--link
+        @extend .footer__text
+        display: inline-block
+        margin: 10px
