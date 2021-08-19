@@ -1,8 +1,8 @@
 @use '../utilities/mixins' as mixin
 @use '../utilities/variables' as var
-.footer-container
+.footer
   background-color: #151421
-  .footer
+  .footer-container
     @include mixin.max-width
     width: 100%
     padding: 1rem
@@ -23,8 +23,21 @@
         color: grey
         text-align: start
         display: block
-        margin: 10px 0
+        margin: 0.625rem 0
       .footer__text--link
         @extend .footer__text
         display: inline-block
         margin: 10px
+  .copyright
+    width: 100%
+    height: 6.25rem
+    display: flex
+    justify-content: center
+    align-items: center
+    border-top: 0.5px solid rgba(255,255,255, 0.1)
+    .copyright__text
+      color: grey
+      font-weight: 300
+      .copyright__link
+        color: white
+        font-weight: 700
