@@ -1,6 +1,6 @@
 # Corp Vision - Website
 
-En este repositorio se encuentra un proyecto de practica. Se trata de un sitio web empresarial desarrollado en 🛠 HTML, CSS (Flexbox / Grid / Sass / BEM) y JavaScript 🛠para mejorar mis habilidades con dichas tecnologías. 
+This is a practice project to improve my skills with 🛠 HTML, CSS (Flexbox, Grid, Sass, BEM) and Basic JavaScript 🛠
 
 [DEMO](https://luisguzmanm.github.io/corp-vision/).
 
